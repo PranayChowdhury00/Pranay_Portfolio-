@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8">
           {/* Branding Section */}
           <div>
-            <h2 className="text-2xl font-bold text-[#FF014F]">Your Name</h2>
+            <h2 className="text-2xl font-bold text-[#FF014F]">Pranay Chowdhury</h2>
             <p className="mt-2 text-sm">
               Frontend Developer | Creating modern & user-friendly designs.
             </p>
@@ -44,7 +44,7 @@ export default function Footer() {
           {/* Contact Information */}
           <div>
   <h3 className="text-lg font-semibold text-white">Contact</h3>
-  <p className="mt-2 text-gray-400">Pranay Chowdhury</p>
+  
   <p className="mt-1 text-gray-400">
     📧 <a href="mailto:pranaychowdhury00@gmail.com" className="hover:text-[#FF014F]">
       pranaychowdhury00@gmail.com
