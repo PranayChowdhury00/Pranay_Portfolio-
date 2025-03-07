@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "Building My Portfolio",
+      "author": "Pranay Chowdhury",
+      "date": "2025-03-07",
+      "content": "In this post, I’ll discuss the journey of building my personal portfolio. It’s a place where I can showcase my projects, blogs, and thoughts as a web developer. I’ve used React to build the frontend, and it's hosted on Vercel."
+    },
+    {
+      "id": 2,
+      "title": "Why I Love React",
+      "author": "Pranay Chowdhury",
+      "date": "2025-02-25",
+      "content": "React has completely changed the way I build web applications. In this post, I’ll dive deep into why I love using React and its component-based structure that makes it so powerful for building dynamic user interfaces."
+    },
+    {
+      "id": 3,
+      "title": "Exploring Firebase Authentication",
+      "author": "Pranay Chowdhury",
+      "date": "2025-01-15",
+      "content": "Firebase Authentication simplifies the process of adding authentication to your app. In this blog post, I explore the Firebase Authentication API, the benefits of using it, and how to set it up in a React app."
+    }
+  ]
+  
