@@ -30,7 +30,7 @@ const projects = [
 
 export default function MyProjects() {
   return (
-    <motion.div
+    <motion.div id="projects"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}

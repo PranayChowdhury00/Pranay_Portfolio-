@@ -74,7 +74,7 @@ const Education = () => {
     />
   </div>
   {/* Experience Content with Lottie Animation */}
-  <div className="flex items-center justify-center">
+  <div className="flex items-center justify-center flex-col md:flex-row">
     {/* Text Section */}
     <div className="w-1/2">
       <h3 className="text-xl font-semibold">Full-Stack Projects & Web Design</h3>
@@ -85,7 +85,7 @@ const Education = () => {
 
     {/* Lottie Animation */}
     <div className="w-1/2">
-      <div className="w-[400px] h-[300px] md:ml-28">
+      <div className="md:w-[400px] h-[300px] md:ml-28">
         <Lottie animationData={img} loop={true} className="w-full h-full" />
       </div>
     </div>
