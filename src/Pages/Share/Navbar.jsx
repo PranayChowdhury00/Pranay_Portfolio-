@@ -33,7 +33,7 @@ const Navbar = () => {
         <Link to="/">
           <div className="flex items-center">
             <img className="w-12 " src="/portfolio-manager.png" alt="" />
-            <p className="w-[200px] md:w-0 ms:font-bold text-[15px] md:text-xl ml-4">Pranay Chowdhury</p>
+            <p className="w-[200px]  md:font-bold text-[15px] md:text-xl ml-4">Pranay Chowdhury</p>
           </div>
         </Link>
       </div>
@@ -48,13 +48,13 @@ const Navbar = () => {
             </li>
           </Link>
 
-          <Link to="https://github.com">
+          <Link to="https://github.com/PranayChowdhury00">
             <li className="p-2 bg-base-300 rounded-full transition delay-200 ease-in hover:text-white hover:bg-[#FF014F]">
               <SlSocialGithub className="w-5 h-5" />
             </li>
           </Link>
 
-          <Link to="https://facebook.com">
+          <Link to=" https://www.facebook.com/share/19ztW6gzmb/ ">
             <li className="p-2 bg-base-300 rounded-full transition delay-200 ease-in hover:text-white hover:bg-[#FF014F]">
               <TiSocialFacebookCircular className="w-5 h-5" />
             </li>
