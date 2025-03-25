@@ -1,48 +1,47 @@
-import { useEffect, useState } from "react";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
+import React from 'react';
+import { FaReact, FaNodeJs, FaDatabase, FaFigma, FaTools, FaCode } from 'react-icons/fa';
+import { SiNextdotjs, SiTypescript, SiMongodb, SiAdobe, SiTailwindcss, SiExpress, SiWebpack, SiGit } from 'react-icons/si';
+
+const skillCategories = [
+  {
+    title: "Frontend",
+    icon: <FaCode size={28} className="text-pink-500" />,
+    skills: ["React", "Next.js", "TypeScript", "HTML", "CSS", "Tailwind CSS"],
+  },
+  {
+    title: "Backend",
+    icon: <FaNodeJs size={28} className="text-green-500" />,
+    skills: ["Node.js", "Express", "MongoDB"],
+  },
+  {
+    title: "Design",
+    icon: <FaFigma size={28} className="text-purple-500" />,
+    skills: ["Figma", "Adobe XD", "UI/UX Principles"],
+  },
+  {
+    title: "Other",
+    icon: <FaTools size={28} className="text-yellow-500" />,
+    skills: ["Git", "Webpack", "SEO"],
+  },
+];
 
 export default function SkillsSection() {
-  const skills = [
-    { name: "HTML", percentage: 90 },
-    { name: "CSS", percentage: 85 },
-    { name: "JavaScript", percentage: 80 },
-    { name: "React", percentage: 75 },
-    { name: "Node.js", percentage: 70 },
-    { name: "Express", percentage: 65 },
-    { name: "Mongo db", percentage: 50 },
-    { name: "Next.js", percentage: 40 },
-    { name: "Typescript", percentage: 40 },
-  ];
-
-  const [progress, setProgress] = useState(skills.map(() => 0));
-
-  useEffect(() => {
-    setTimeout(() => {
-      setProgress(skills.map(skill => skill.percentage));
-    }, 500);
-  }, []);
-
   return (
-    <div id="services" className="max-w-5xl mx-auto mt-20 mb-20">
-      <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">My Skills</h2>
-      
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-        {skills.map((skill, index) => (
-          <div key={skill.name} className="flex flex-col items-center">
-            <div className="w-24 h-24">
-              <CircularProgressbar
-                value={progress[index]}
-                text={`${progress[index]}%`}
-                styles={buildStyles({
-                  textColor: "#ff014dd9",
-                  pathColor: "#ff014dd9",
-                  trailColor: "#e5e7eb",
-                  textSize: "16px",
-                })}
-              />
-            </div>
-            <span className="text-lg font-medium mt-3">{skill.name}</span>
+    <div id="skills" className="max-w-6xl mx-auto mt-20 mb-20 px-4">
+      <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">My Skills</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {skillCategories.map((category) => (
+          <div
+            key={category.title}
+            className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-xl"
+          >
+            <div className="mb-4">{category.icon}</div>
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">{category.title}</h3>
+            <ul className="text-gray-600 text-center space-y-2">
+              {category.skills.map((skill) => (
+                <li key={skill} className="text-lg font-medium">{skill}</li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>

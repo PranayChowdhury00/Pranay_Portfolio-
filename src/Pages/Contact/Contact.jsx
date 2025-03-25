@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Contact() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div id='contact' className='mt-10 mb-10 max-w-7xl mx-auto bg-base-200 rounded-2xl p-10'>
       <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
         
         {/* Text Section */}
-        <div className="w-full lg:w-1/2 text-center lg:text-left">
+        <div className="w-full lg:w-1/2 text-center lg:text-left" data-aos="fade-right" data-aos-duration="1000">
           <h4 className="text-lg font-semibold text-[#FF014F]">GET IN TOUCH</h4>
           <h1 className="text-3xl font-bold">Elevate your brand with Me</h1>
           <p className="mt-2 text-gray-600">
@@ -16,7 +22,7 @@ export default function Contact() {
         </div>
         
         {/* Input Fields */}
-        <div className="w-full lg:w-1/2 space-y-4">
+        <div className="w-full lg:w-1/2 space-y-4" data-aos="fade-left" data-aos-duration="1000">
           {/* Name & Phone */}
           <div className="flex flex-col sm:flex-row gap-5">
             <input className='input input-bordered w-full' type="text" name="name" placeholder='Your Name' />
