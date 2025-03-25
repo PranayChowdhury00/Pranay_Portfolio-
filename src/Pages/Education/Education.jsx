@@ -31,7 +31,7 @@ const Education = () => {
   return (
     <section className="mb-10 max-w-7xl mx-auto px-5">
       <header className="text-center" data-aos="fade-down" data-aos-duration="1000">
-        <h1 className="text-[#ff014dd9] font-medium text-xl">Education & Experience</h1>
+        <h1 className="text-[#ff014dd9] font-medium text-3xl">Education & Experience</h1>
       </header>
 
       {/* Education Section */}

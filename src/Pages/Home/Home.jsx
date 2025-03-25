@@ -8,6 +8,7 @@ import MyProjects from '../MyProjects/MyProjects';
 import Testimonials from '../Testimonials/Testimonials';
 import Blog from '../Blog/Blog';
 import Contact from '../Contact/Contact';
+import Services from '../Services/Services';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Banner></Banner>
             <MyAcive></MyAcive>
             <ExperienceSection></ExperienceSection>
+            <Services></Services>
             <SkillsSection></SkillsSection>
             <Education></Education>
             

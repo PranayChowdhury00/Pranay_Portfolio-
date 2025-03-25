@@ -5,6 +5,8 @@ const testimonials = [
   {
     id: 1,
     name: "John Doe",
+    role: "Project Manager",
+    company: "TechCorp",
     message:
       "Working with you was a fantastic experience! Your attention to detail and commitment to delivering high-quality work really stands out. Keep it up!",
     rating: 5,
@@ -13,6 +15,8 @@ const testimonials = [
   {
     id: 2,
     name: "Jane Smith",
+    role: "UX Designer",
+    company: "Creative Studio",
     message:
       "Amazing work! You exceeded my expectations, and I couldn't be happier with the results. Highly recommend your services to anyone!",
     rating: 5,
@@ -21,14 +25,18 @@ const testimonials = [
   {
     id: 3,
     name: "Michael Johnson",
+    role: "Software Engineer",
+    company: "Innovatech",
     message:
       "A true professional! You tackled every challenge with ease and delivered on time. The final product was beyond what I imagined.",
     rating: 5,
     imgSrc: "https://st3.depositphotos.com/1017228/18878/i/450/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg",
   },
   {
-    id: 5,
+    id: 4,
     name: "Sarah Lee",
+    role: "Marketing Specialist",
+    company: "MarketPros",
     message:
       "Your work is phenomenal. I am so impressed with the results. You truly made a difference in my project, and I am grateful for it.",
     rating: 5,
@@ -37,6 +45,8 @@ const testimonials = [
   {
     id: 5,
     name: "Chris Green",
+    role: "Product Owner",
+    company: "AgileWorks",
     message:
       "Incredible experience! Your problem-solving skills and quick turnaround were impressive. Looking forward to working with you again soon.",
     rating: 5,
@@ -45,6 +55,8 @@ const testimonials = [
   {
     id: 6,
     name: "Olivia Brown",
+    role: "Content Creator",
+    company: "MediaHub",
     message:
       "I am extremely happy with the project outcome. Your communication was clear and prompt, and the final product exceeded expectations. Highly recommended!",
     rating: 5,
@@ -52,7 +64,7 @@ const testimonials = [
   },
 ];
 
-const TestimonialCard = ({ name, message, rating, imgSrc }) => {
+const TestimonialCard = ({ name, role, company, message, rating, imgSrc }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
@@ -65,6 +77,7 @@ const TestimonialCard = ({ name, message, rating, imgSrc }) => {
         className="w-24 h-24 rounded-full border-4 border-[#ff014dd9] mb-4"
       />
       <h3 className="text-xl font-semibold">{name}</h3>
+      <p className="text-sm text-gray-500">{role} at {company}</p>
       <p className="mt-2 text-center">{message}</p>
       <div className="flex items-center mt-3">
         {Array.from({ length: rating }).map((_, index) => (
