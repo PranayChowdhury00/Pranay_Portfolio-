@@ -29,16 +29,16 @@ const Education = () => {
   ];
 
   return (
-    <section className="mb-10 max-w-7xl mx-auto px-5">
+    <section className="mb-16 max-w-7xl mx-auto px-5">
       <header className="text-center" data-aos="fade-down" data-aos-duration="1000">
         <h1 className="text-[#ff014dd9] font-medium text-3xl">Education & Experience</h1>
       </header>
 
       {/* Education Section */}
       <div className="mt-8">
-        <div className="flex items-center mb-10" data-aos="fade-right" data-aos-duration="1000">
+        <div className="flex items-center mb-10 mt-5" data-aos="fade-right" data-aos-duration="1000">
           <h1 className="text-2xl text-gray-800 font-bold mr-5">Education</h1>
-          <img src="/custom-line.png" className="h-[2px] w-40 bg-gray-400" alt="divider line" />
+          <img src="/custom-line.png" className="h-[2px] w-40 bg-gray-400 mt-2" alt="divider line" />
         </div>
 
         {/* Grid Layout for Education Items */}
@@ -50,10 +50,10 @@ const Education = () => {
       </div>
 
       {/* Experience Section */}
-      <div className="mt-10">
+      <div className="mt-16">
         <div className="flex items-center mb-0" data-aos="fade-right" data-aos-duration="1000">
           <h1 className="text-2xl text-gray-800 font-bold mr-5 mb-0">Experience</h1>
-          <img src="/custom-line.png" className="h-[2px] w-42 bg-gray-400 mb-0 " alt="divider line" />
+          <img src="/custom-line.png" className="h-[2px] w-42 bg-gray-400 mb-0 mt-2" alt="divider line" />
         </div>
         {/* Experience Content with Lottie Animation */}
         <div className="flex items-center justify-center flex-col md:flex-row" data-aos="fade-up" data-aos-duration="1000">
