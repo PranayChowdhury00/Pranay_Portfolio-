@@ -9,6 +9,7 @@ import Testimonials from '../Testimonials/Testimonials';
 import Blog from '../Blog/Blog';
 import Contact from '../Contact/Contact';
 import Services from '../Services/Services';
+import Certificates from '../Certificates/Certificates';
 
 const Home = () => {
     return (
@@ -23,6 +24,7 @@ const Home = () => {
             <MyProjects></MyProjects>
             <Blog></Blog>
             <Testimonials></Testimonials>
+            <Certificates></Certificates>
             <Contact></Contact>
         </div>
     );

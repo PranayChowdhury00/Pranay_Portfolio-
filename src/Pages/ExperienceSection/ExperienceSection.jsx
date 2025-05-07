@@ -10,7 +10,7 @@ export default function ExperienceSection() {
 
   const experiences = [
     { end: 2, label: "Years of Learning Experience" },
-    { end: 200, label: "Happy Customers" },
+    { end: 10, label: "Projects Completed" },  // Updated section
     { end: 50, label: "Client Reviews" },
   ];
 

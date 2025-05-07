@@ -42,9 +42,16 @@ export default function Banner() {
           <h1 className="text-gray-950 font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight mt-2">
             I'm Pranay Chowdhury
           </h1>
-          <div className="text-2xl sm:text-3xl font-semibold text-[#FF0161] py-4 tracking-tight">
+          <motion.div
+            key={currentText}
+            className="text-2xl sm:text-3xl font-semibold text-[#FF0161] py-4 tracking-tight"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             {currentText}
-          </div>
+          </motion.div>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-lg mt-3">
             Detail-oriented and innovative MERN stack web developer, passionate
             about building scalable, user-friendly solutions. Eager to learn,
@@ -52,7 +59,7 @@ export default function Banner() {
             efficiency.
           </p>
           <motion.a
-            href="/resume.pdf"
+            href={resumeLink}
             download="My_Resume.pdf"
             whileHover={{ scale: 1.1 }}
             className="btn btn-primary mt-6 inline-block text-base font-medium"
@@ -64,9 +71,9 @@ export default function Banner() {
         {/* Image part */}
         <div className="flex-1 flex justify-center lg:justify-end">
           <img
-            className="w-[250px] sm:w-[300px] lg:w-[400px] md:ml-10"
+            className="w-[250px] sm:w-[300px] lg:w-[400px] md:ml-10 object-cover"
             src="/myphoto2.png"
-            alt="Pranay Chowdhury"
+            alt="Pranay Chowdhury's Photo"
           />
         </div>
       </div>

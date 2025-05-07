@@ -39,7 +39,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar sticky top-0 z-10 bg-base-100 shadow-sm px-10">
+    <div className="w-full navbar  sticky top-0 z-10 bg-base-100 shadow-sm px-4 md:px-10">
       <div className="navbar-start">
         <Link to="/">
           <div className="flex items-center">
@@ -52,7 +52,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <ul className="md:flex gap-6 items-center hidden">
+        <ul className="md:flex gap-6 items-center hidden ">
           <Link to="www.linkedin.com/in/pranay-chowdhury">
             <li className="p-2 bg-base-300 rounded-full transition delay-200 ease-in hover:text-white hover:bg-[#FF014F]">
               <TiSocialLinkedin className="w-5 h-5" />
